@@ -1,0 +1,13 @@
+speed = float(input("Input the speed (km/hr)"))
+distance = 42.195
+time = distance/speed
+hours = int(time)
+minutes = round((time - hours) *60)
+
+def print_time(speed):
+    global distance
+    time = distance/speed
+    hours = int(time)
+    minutes = round((time - hours) *60)
+    
+print("At", speed, "km/hr it will take approximately", hours, "hours , and", minutes, "minutes to finish a marathon")
